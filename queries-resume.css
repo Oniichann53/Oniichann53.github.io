@@ -1,0 +1,33 @@
+@media (max-width: 87.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 81.75em) {
+}
+@media (max-width: 68.75em) {
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 35em) {
+  html {
+    font-size: 25%;
+  }
+}

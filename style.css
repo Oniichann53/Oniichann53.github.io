@@ -1,0 +1,507 @@
+/* ////////////////////////////////////////////////////////////////// */
+/* ------------------------ General Section ------------------------- */
+/* ////////////////////////////////////////////////////////////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #555;
+  line-height: 1;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* ----------------------- Navigation Section ----------------------- */
+/* ////////////////////////////////////////////////////////////////// */
+
+.header-section {
+  width: 100%;
+  height: 9.6rem;
+  display: grid;
+  background-color: #ecf3eb;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 0 4.8rem;
+  transition: all 0.5s;
+}
+
+.sticky .hero-section {
+  margin-top: 9.6rem;
+}
+
+.sticky .header-section {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(236, 243, 235, 0.98);
+  z-index: 9999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.nav-logo,
+.nav-logo2 {
+  text-decoration: none;
+}
+
+.nav-icon {
+  font-size: 4.2rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  color: #295c44;
+  padding: 1rem;
+  border-radius: 3.2rem;
+  background-color: #c9e5da;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.058);
+}
+
+.nav-links {
+  justify-self: right;
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  z-index: 20;
+}
+
+.nav-link:link,
+.nav-link:visited,
+.nav-link2:link,
+.nav-link2:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 2;
+  transition: all 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link2:hover,
+.nav-link2:active {
+  color: #77bfa3;
+}
+
+.nav-link.cta:link,
+.nav-link.cta:visited,
+.nav-link2.cta:link,
+.nav-link2.cta:visited {
+  padding: 1.3rem 4rem;
+  background-color: #77bfa3;
+  color: #30372f;
+  border-radius: 10px;
+}
+
+.nav-link.cta:hover,
+.nav-link.cta:active,
+.nav-link2.cta:hover,
+.nav-link2.cta:active {
+  background-color: #6bac93;
+  color: #192118;
+  border-radius: 10px;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* -------------------------- Hero Section -------------------------- */
+/* ////////////////////////////////////////////////////////////////// */
+
+.hero-section {
+  background-color: #ecf3eb;
+  padding: 4.8rem 0 9.6rem 0;
+  margin-bottom: 6.2rem;
+}
+
+.hero {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-heading {
+  color: #192118;
+  position: relative;
+  font-size: 7.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.underline-heading {
+  position: absolute;
+  width: 32rem;
+  top: 0;
+  left: 0;
+  transform: translate(13rem, -10rem);
+  opacity: 90%;
+}
+
+.hero-subheading {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #77bfa3;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.bio-btn {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.resume-btn:link,
+.resume-btn:visited,
+.more-btn:link,
+.more-btn:visited {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: 2;
+  padding: 1.8rem 4.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.235);
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.resume-btn:link,
+.resume-btn:visited {
+  background-color: #77bfa3;
+  color: #30372f;
+}
+.resume-btn:hover,
+.resume-btn:active,
+.more-btn:hover,
+.more-btn:active {
+  border-radius: 10px;
+}
+
+.resume-btn:hover,
+.resume-btn:active {
+  background-color: #6bac93;
+  color: #192118;
+}
+
+.more-btn:link,
+.more-btn:visited {
+  color: #333;
+}
+
+.more-btn:hover,
+.more-btn:active {
+  background-color: #e8e9e8;
+  color: #192118;
+}
+
+.social-media-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-box p {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icon {
+  width: 3.6rem;
+  fill: #243931;
+  transition: all 0.2s;
+}
+
+.social-icon:hover {
+  fill: #42926d;
+}
+
+.my-photo-box {
+  padding: 24rem;
+  position: relative;
+}
+.my-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 72rem;
+  transform: translateY(20.5rem);
+  z-index: 1;
+}
+
+.my-photo-shadow {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  width: 72rem;
+  transform: translate(4rem, 20.5rem);
+  filter: brightness(0) invert(1);
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* ------------------------ Daily Use Section ----------------------- */
+/* ////////////////////////////////////////////////////////////////// */
+
+.section-use {
+  width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.2rem;
+  background-color: #fff;
+  border-radius: 1000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.235);
+  padding: 2rem 4rem;
+  transform: translateY(-8rem);
+}
+
+.use-heading {
+  color: #6b6b6b;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.use-logos {
+  display: flex;
+  gap: 10rem;
+}
+
+.use-logo {
+  width: 5.2rem;
+  height: 5.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+/* ------------------------ Brief Intro Section ----------------------- */
+/* //////////////////////////////////////////////////////////////////// */
+
+.brief-box {
+  width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24rem;
+}
+
+.brief-heading {
+  font-size: 4.2rem;
+  color: #295c44;
+  justify-self: center;
+  margin-bottom: 5.2rem;
+  letter-spacing: 6px;
+  padding-top: 8rem;
+  border-top: 2px solid rgba(25, 33, 24, 0.257);
+}
+
+.brief-text {
+  font-size: 1.8rem;
+  color: #192118;
+  line-height: 2.3;
+  letter-spacing: 1.1px;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* ------------------------ About me Section ------------------------ */
+/* ////////////////////////////////////////////////////////////////// */
+
+.about-photo-box {
+  padding: 16rem 12rem;
+  position: relative;
+}
+
+.about-photo {
+  width: 52rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-16rem, 10rem);
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.2rem;
+  align-items: center;
+}
+
+.time-period-heading {
+  font-size: 4.2rem;
+  color: #295c44;
+  justify-self: center;
+  margin-bottom: 5.2rem;
+  letter-spacing: 6px;
+}
+
+.period-description {
+  font-size: 1.8rem;
+  letter-spacing: 2;
+  line-height: 2;
+  /* background-color: rgba(119, 191, 163, 0.168);
+  border-radius: 20px; */
+}
+
+.about-svg {
+  width: 52rem;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* -------------------------- Gallery Section -------------------------- */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.underline-heading-gallery {
+  position: absolute;
+  width: 32rem;
+  top: 0;
+  left: 0;
+  transform: translate(-10rem, -10rem);
+  opacity: 90%;
+}
+
+.gallery-photo {
+  width: 72rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-16rem, 10rem);
+}
+
+.photo-section {
+  padding: 8.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(1, 1fr); */
+  gap: 1rem;
+  padding: 1.6rem;
+  margin-bottom: 12rem;
+}
+
+.my-gallery {
+  width: 40rem;
+  justify-self: center;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* -------------------------- Blog Section -------------------------- */
+/* ////////////////////////////////////////////////////////////////// */
+
+.blog-photo {
+  width: 50rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-16rem, 10rem);
+}
+
+.underline-heading-blog {
+  position: absolute;
+  width: 32rem;
+  top: 0;
+  left: 0;
+  transform: translate(-10rem, -10rem);
+  opacity: 90%;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* ------------------------- Footer Section ------------------------- */
+/* ////////////////////////////////////////////////////////////////// */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.058);
+}
+
+.footer-icon {
+  box-sizing: content-box;
+  width: 2.4rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  opacity: 50%;
+  margin-bottom: 2rem;
+  transition: all 0.2s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  border: 1px solid #192118;
+  opacity: 80%;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited,
+.footer-link2:link,
+.footer-link2:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  transition: all 0.25s;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.footer-link2:hover,
+.footer-link2:active {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #192118;
+}
+
+.copyright-text {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+}
