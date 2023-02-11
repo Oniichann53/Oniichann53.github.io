@@ -209,6 +209,20 @@
     width: 68rem;
   }
 }
+
+@media (max-width: 32em) {
+  html {
+    font-size: 30%;
+  }
+  .section-use {
+    transform: scale(70%);
+  }
+  .hero {
+  }
+  .brief-box {
+    width: 60rem;
+  }
+}
 /*********************************/
 /* BELOW 704px (Smaller tablets) */
 /*********************************/
